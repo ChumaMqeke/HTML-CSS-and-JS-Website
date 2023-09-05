@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The enemies of syntax</title>
+      
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--This is box icons link-->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--This is google font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+<!--JavaScript file link-->
+ <!-- Swiper CSS -->
+ <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+<!--AOS animation link-->
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </head>
+    <body>  
+      
+      <!--This is header section-->
+<header>
+            <a href="#" class="logo.png">
+                <img src="images/logo.svg" data-aos="zoom-in-up">
+            </a>
+
+            <!--Navigation bar-->
+<ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Our Team</a></li>
+    <li><a href="#about">Services</a></li>
+    <li><a href="#contact">Contacts</a></li>
+</ul>
+
+<!--This is the section on the top right, MENU-->
+<div class="h-btn">
+  <a href="#" class="h-btn1" onclick="openForm()">Login</a>
+  <a href="#" class="h-btn2" onclick="openForm2()">Sign Up</a>
+<div class="bx bx-menu" id="menu-icon">
+
+</div>
+</div>
+<!-- login Form-->
+<div class="form-popup" id="Login">
+<form class="form-container">
+  <h1>Login</h1>
+
+  <label for="email"><b>Email</b></label>
+  <input type = "text" id = "#" value = "" placeholder="Email@gmail.com">
+  <span id = "m" style="color:red"> </span> <br><br> 
+
+  <label for="psw"><b>Password</b></label>
+  <input type = "password" id = "#" value = "" placeholder="Password">
+  <span id = "m" style="color:red"> </span> <br><br> 
+
+  <button type="submit" class="btn">Login</button>
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<!-- SignUp Form-->
+<div class="form-popup2" id="SignUp">
+  <form class="form-container2">
+    <h1>Sign Up</h1>
+  
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your name" name="email" required>
+  
+    <label for="email"><b>Surname</b></label>
+    <input type="text" placeholder="Enter Your Surname" name="email" required>
+  
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="e.g email@gmail.com" name="email" required>
+  <!--
+  <label for="male" style="color: rgb(54, 54, 54);">male</label>
+  <input type="radio" name="gender" id="male">
+  
+  <label for="female" style="color: rgb(68, 68, 68);">female</label>
+  <input type="radio" name="gender" id="female">
+  -->
+  
+  
+  <label for="psw"><p class="p1">Create Password</p></label>
+  <input type = "password" id = "pswd1" value = "">
+  <span id = "message1" style="color:red"> </span> <br><br> 
+  
+  <label for="psw"><p class="p1">Confirm Password</p></label>
+  <input type = "password" id = "pswd2" value = "">
+  <span id = "message2" style="color:red"> </span> <br><br> 
+   
+  
+    <button type="submit" value="Submit" class="btn" onclick="validateForm()">create account</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+  </form>
+  </div>
+  </header>
+  
+          <!--This is home Section-->
+          <section class="home" id="home">
+  <div class="home-text" data-aos="zoom-in-up">
+      <h1>We are the enemies of syntax!</h1>
+      <p>We are driven by tech while putting people first.
+      <span id="dots">...</span><span id="more">Established in 2023, enemies of Syntax have developed into a top provider of managed IT services, serving companies in the Western Cape and the rest of South Africa.  We take a collaborative approach when working with clients, getting to know their industry and offering solutions that follow best practices.<br><br>
+        Our constant goal is to satisfy our clients most stringent requirements for technological dependability, quality, and services. 
+        </span></p>
+  
+      <!--Seaarch-->
+      <div class="h-search">
+          <form>
+            
+        
+              <input type="submit" value="Read more" onclick="myFunction()" id="myBtn2">
+              
+          </form>
+      </div>
+  </div>
+  
+  <div class="home-img">
+   
+      <img src="images/img1.jpg" data-aos="zoom-in-up">
+  
+  </div>
+          </section>
+  
+          <!--This section is for Services-->
+          <section class="services" id="services">
+           
+              <div class="services-content" data-aos="zoom-in-up">
+                  <div class="inner">
+                    <h1>Our Team</h1>
+                    <div class="border"></div>
+  
+                    <div class="team-content">
+                      <h4>Enemies of Syntax</h4>
+                      <div class="borderTeam"></div>
+                      <p> Our team is professional and technically trained to assist clients</p>
+                    </div>
+            
+                    <div class="row">
+                      <div class="col">
+                        <div class="team">
+                          <img src="images/Kivas.jpg" alt="">
+                          <div class="name">Uviwe Makiva</div>
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+            
+                          <p class="p1">
+                              <b>Business Analyst</b><br>I interpret the business project ,process of the companyy and i give services and software through analysis of data. 
+                          </p>
+  
+                          <audio controls>
+            
+                             <source src="audio/odo.m4a" type="audio/mpeg">
+                            your browser 
+                          </audio>
+                        </div>
+                      </div>
+            
+                      <div class="col">
+                        <div class="team">
+                          <img src="images/siwe.jpg" alt="">
+                          <div class="name">Sithulisiwe Peko</div>
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+            
+                          <p class="p1">
+                          <b>Junior Softare Developer</b><br>Working under supervision, developing softwares, researching, designing and managing new softwares 
+                          </p>
+  
+                          <audio controls>
+            
+                            <source src="/audio/Kulelizwe.mp3" type="audio/mpeg">
+                            your browser 
+                          </audio>
+  
+                        </div>
+                      </div>
+            
+                      <div class="col">
+                        <div class="team">
+                          <img src="images/wini.jpg" alt="">
+                          <div class="name">Siwinile Mdani</div>
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+            
+                          <p class="p1">
+                            <b>Network Engineer</b><br>Deals with instalation of devices and servers. Configuring and troubleshooting of computers, implementing strategy of IoT solution.
+                          </p>
+  
+                          <audio controls>
+            
+                            <source src="de.mp3" type="audio/mpeg">
+                            your browser 
+                          </audio>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                
+          </section>
+  
+  
+  <!--About Us section-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <figure>
+     <img src="images/imgS2.jpg">
+     <figcaption><i>Caption...</i></figcaption>
+    </figure>
+    </div>
+    
+    <div class="about-text" data-aos="zoom-in-up">
+     <h2>We offer the best service to our clients </h2>
+     <p>
+      Our team is dedicated to delivering solutions for the IT organizations and other clients. We specialize in Website development services, Network Engineering, Business analysis, Graphic designer and ICT Support Service.<br>
+      
+       <a href="#contact" class="btn">Get In Touch</a>
+     </p>
+    
+    </div>
+    </section>
+  
+  
+  <!--Vlog-->
+  <section class="vlog">
+    <div class="center-left">
+       <h1>Vlog</h1>
+   </div>
+  
+  
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/showImg/fullDev.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              
+              <div class="name-job">
+                <h3 class="name">Chuma Mqeke</h3>
+                <h4 class="job">Full Stack Developer</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/showImg/photographer.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              
+              <div class="name-job">
+                <h3 class="name">Sithulisiwe Peko</h3>
+                <h4 class="job">Graphic Designer</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/showImg/dataAna.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              
+              <div class="name-job">
+                <h3 class="name">Uviwe Makiva</h3>
+                <h4 class="job">Data Analyst</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/showImg/appDev.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              
+              <div class="name-job">
+                <h3 class="name">Mdani Siwinile</h3>
+                <h4 class="job">App Developer</h4>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+  <div class="center-btn">
+    <form>
+    <a href="#" class="btn" type="file" id="myFile" name="filename">Upload Picture</a>
+  </form>
+  
+  
+  </div>
+  </section>
+  
+  
+  <!--review section-->
+  <section class="review">
+    <div class="review-content">
+      <h2>What our clients say about us</h2>
+      <p>We request our clients to rate us using Google Review, which indicates that the reviews are genuine and unedited.</p>
+      <a href="#" class="btn" onclick="openReview()">Rate Us</a>
+    </div>
+  
+  <!--Review-->
+  
+  
+    <div class="review-container" id="review-container">
+      <button class="review-star">&#9734;</button>
+      <button class="review-star">&#9734;</button>
+      <button class="review-star">&#9734;</button>
+      <button class="review-star">&#9734;</button>
+      <button class="review-star">&#9734;</button>
+      <p class="current-rating" id="p1">0 of 5</p>
+      <button type="button" class="btn cancel" onclick="closeReview()">Submit</button>
+  </div>
+  
+  </section>
+  
+  
+  <!--Contacts section-->
+  <section class="contact" id="contact">
+  
+    <footer>
+    <div class="contact-content">
+      <img src="images/logo.svg">
+      <p>Click on the link below, and follow us on our social media pages.</p>
+      <div class="icons">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+      </div>
+    </div>
+  
+  
+    <div class="contact-content">
+      
+      <table>
+       <tr>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>LinkedIn</th>
+       </tr>
+  
+       <tr>
+        <td>+27 000 - 000 - 00</td>
+        <td><a href="#">enemiesofSyntax@gmail.org.za</a></td>
+        <td>Enemies Of Syntax</td>
+       </tr>
+      </table>
+  
+    </div>
+  </footer>
+  </section>
+  
+          <!--This is javaScript file-->
+  
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              offSet: 300,
+              duration: 1200,
+              
+            })
+          </script>
+  
+  
+  
+  <script>
+    function openForm() {
+      document.getElementById("Login").style.display = "block";
+      event.preventDefault();
+    }
+    
+    function closeForm() {
+      document.getElementById("Login").style.display = "none";
+      event.preventDefault();
+    }
+  
+    function logedIn() {
+      alert("Thank you for logging in")
+    }
+    </script>
+  
+  <script>
+    function openForm2() {
+      document.getElementById("SignUp").style.display = "block";
+      event.preventDefault();
+    }
+    
+    function closeForm2() {
+      document.getElementById("SignUp").style.display = "none";
+      event.preventDefault();
+    }
+    
+    </script>
+    
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn2");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+        event.preventDefault();
+      }
+     
+      </script>
+      
+<script>
+  
+  var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  
+  if (inputText.value.match(mailFormat)) {
+    document.getElementById("email").innerHTML = "Enter the valid email address!";
+    return false;
+  } else {
+    alert("Invalid address!");
+    return false;
+  }
+</script>
+
+      <script>  
+        function validateForm() {  
+            //collect form data in JavaScript variables  
+            var pw1 = document.getElementById("pswd1").value;  
+            var pw2 = document.getElementById("pswd2").value;
+    
+            event.preventDefault();
+
+       
+            //check empty password field  
+            if(pw1 == "") {  
+              document.getElementById("message1").innerHTML = "**Fill the password please!";  
+              return false;  
+            }  
+            
+            //check empty confirm password field  
+            if(pw2 == "") {  
+              document.getElementById("message2").innerHTML = "**Enter the password please!";  
+              return false;  
+            }   
+             
+            //minimum password length validation  
+            if(pw1.length < 8) {  
+              document.getElementById("message1").innerHTML = "**Password length must be atleast 8 characters";  
+              return false;  
+            }  
+          
+            //maximum length of password validation  
+            if(pw1.length > 15) {  
+              document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";  
+              return false;  
+            }  
+            
+            if(pw1 != pw2) {  
+              document.getElementById("message2").innerHTML = "**Passwords are not same";  
+              return false;  
+            } else {  
+              alert ("Your password created successfully");  
+             
+              
+            }  
+            event.preventDefault();
+         }  
+        </script>  
+      <!--Reviews-->
+      <script>
+      const stars=document.querySelectorAll('.review-star');
+        const current_rating=document.querySelector('.current-rating');
+        
+        stars.forEach((star,index)=>{
+          star.addEventListener('click',()=>{
+        
+            let current_star=index+1;
+            current_rating.innerText=`${current_star} of 5`;
+        
+            stars.forEach((star,i)=>{
+                if(current_star>=i+1){
+                  star.innerHTML='&#9733;';
+                }else{
+                  star.innerHTML='&#9734;';
+                }
+            });
+        
+          });
+        });
+        </script>
+  
+  <script>
+    function openReview() {
+        document.getElementById("review-container").style.display = "block";
+        event.preventDefault();
+      };
+    
+      </script>
+    <script>
+      
+      function closeReview() {
+        document.getElementById("review-container").style.display = "none";
+        alert('Thank you for rating us!');
+      };
+    </script>
+    
+    
+  
+      <script src="script.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+      </body>
+  </html>
+
+
+
+  
