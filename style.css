@@ -332,7 +332,7 @@ height: 250px;
 }
 
 .about{
-    display: grid;
+    display: center;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 4.5rem;
@@ -372,6 +372,7 @@ height: 250px;
  .review-content h2{
     font-size: var(--h2-font);
     margin-bottom: 12px;
+   
  }
 
  .review-content p{
@@ -918,6 +919,35 @@ transition: all .45s ease;
   transition: all .40s ease;
   color: var(--bg-color);
   
+}
+
+/*Game*/
+
+.main{
+  border:#07ebfcb4 solid 10px ;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #021f36;
+}
+
+
+#textToType {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#userInput {
+  font-size: 20px;
+  padding: 5px;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
 }
 
   
