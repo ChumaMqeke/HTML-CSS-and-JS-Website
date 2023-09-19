@@ -51,7 +51,7 @@
 </div>
 <!-- login Form-->
 <div class="form-popup" id="Login">
-<form class="form-container">
+<form class="form-container" >
   <h1>Login</h1>
 
   <label for="email"><b>Email</b></label>
@@ -69,7 +69,7 @@
 
 <!-- SignUp Form-->
 <div class="form-popup2" id="SignUp">
-  <form class="form-container2">
+  <form class="form-container2" name="form1" action="#" onload='document.form1.text1.focus()'>
     <h1>Sign Up</h1>
   
     <label for="name"><b>Name</b></label>
@@ -79,7 +79,7 @@
     <input type="text" placeholder="Enter Your Surname" name="email" required>
   
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="e.g email@gmail.com" name="email" required>
+    <input type="text" id="mail" placeholder="e.g email@gmail.com" name="email" required>
   <!--
   <label for="male" style="color: rgb(54, 54, 54);">male</label>
   <input type="radio" name="gender" id="male">
@@ -98,7 +98,7 @@
   <span id = "message2" style="color:red"> </span> <br><br> 
    
   
-    <button type="submit" value="Submit" class="btn" onclick="validateForm()">create account</button>
+    <button type="submit" value="Submit" class="btn" onclick="validateForm(document.form1.text1)">create account</button>
     <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
   </form>
   </div>
@@ -447,31 +447,40 @@
       </script>
       
 <script>
-  
-  var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  function validateEmail() {
 
-  
-  if (inputText.value.match(mailFormat)) {
-    document.getElementById("email").innerHTML = "Enter the valid email address!";
-    return false;
-  } else {
-    alert("Invalid address!");
-    return false;
-  }
+ 
+ 
+}
 </script>
 
       <script>  
-        function validateForm() {  
+        function validateForm() { 
+          event.preventDefault(); 
             //collect form data in JavaScript variables  
             var pw1 = document.getElementById("pswd1").value;  
             var pw2 = document.getElementById("pswd2").value;
-    
-            event.preventDefault();
-
+            //Email validation
+          /*  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var email = document.getElementById('mail');
+if(email.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+*/
        
             //check empty password field  
             if(pw1 == "") {  
-              document.getElementById("message1").innerHTML = "**Fill the password please!";  
+              document.getElementById("message1").innerHTML = "**Fill the password please!"; 
+              document.form1.text1.focus(); 
               return false;  
             }  
             
