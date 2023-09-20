@@ -923,31 +923,95 @@ transition: all .45s ease;
 
 /*Game*/
 
-.main{
-  border:#07ebfcb4 solid 10px ;
-  width: 60%;
-  margin: auto;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #021f36;
-}
 
-
-#textToType {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-#userInput {
-  font-size: 20px;
-  padding: 5px;
-}
-
-#score {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ff6600;
-}
-
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    border:#07ebfcb4 solid 10px ;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0a2f5a;
   
+}
+
+.heding {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #cedbdb;
+}
+
+.hedder {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors,
+.accuracy, .cpm, .wpm {
+  background-color: #16a0a5;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  color: #cedbdb;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: rgb(184, 180, 180) 5px 8px 5px;
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
+.hedder_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 1.15rem;
+}
+
+.quote {
+  background-color: #16a0a5;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  color: #cedbdb;
+  box-shadow: rgb(192, 190, 190) 5px 8px 5px;
+}
+
+.input_area {
+  background-color: #f5f5c6;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}

@@ -324,6 +324,7 @@
   </div>
   </section>
   
+  <!--Game-->
 
   <section class="about" id="game">
   
@@ -344,14 +345,36 @@
 
     </div>
 
-    <div class="main">
-      <h1>Typing Game</h1>
-      <p>Type the following text:</p>
-      <p id="textToType">This is a sample text.</p>
-      <input type="text" id="userInput" autofocus>
-      <p>Score: <span id="score">0</span></p>
-  </div> 
-
+    <div class="contain">
+      <div class="heding">Simple Speed Typing</div>
+      <div class="hedder">
+        <div class="wpm">
+          <div class="hedder_text">WPM</div>
+          <div class="curr_wpm">100</div>
+        </div>
+        <div class="cpm">
+          <div class="hedder_text">CPM</div>
+          <div class="curr_cpm">100</div>
+        </div>
+        <div class="errors">
+          <div class="hedder_text">Errors</div>
+          <div class="curr_errors">0</div>
+        </div>
+        <div class="timer">
+          <div class="hedder_text">Time</div>
+          <div class="curr_time">60s</div>
+        </div>
+        <div class="accuracy">
+          <div class="hedder_text">Accuracy %</div>
+          <div class="curr_accuracy">100</div>
+        </div>
+      </div>
+  
+      <div class="quote">Click on the area below to start the game.</div>
+      <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
+        onfocus="startGame()"></textarea>
+      <button class="restart_btn" onclick="resetValues()">Restart</button>
+    </div>
     </section>
   
   <!--review section-->
