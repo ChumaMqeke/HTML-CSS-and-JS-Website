@@ -22,7 +22,7 @@ window.scroll = () => {
  //game
 
  // define the time limit
-let TIME_LIMIT = 60;
+let TIME_LIMIT = 20;
 
 // define quotes to be used
 let quotes_array = [
@@ -164,8 +164,8 @@ function finishGame() {
   restart_btn.style.display = "block";
 
   // calculate cpm and wpm
-  cpm = Math.round(((characterTyped / timeElapsed) * 60));
-  wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60));
+  cpm = Math.round(((characterTyped / timeElapsed) * 20));
+  wpm = Math.round((((characterTyped / 5) / timeElapsed) * 20));
 
   // update cpm and wpm text
   cpm_text.textContent = cpm;
