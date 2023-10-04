@@ -39,7 +39,7 @@
     <li><a href="#services">Our Team</a></li>
     <li><a href="#about">Services</a></li>
     <li><a href="#contact">Contacts</a></li>
-    <li><a href="#game">Events</a></li>
+    <li><a href="#game" onclick="myFunction()">Events</a></li>
 </ul>
 
 <!--This is the section on the top right, MENU-->
@@ -318,7 +318,9 @@
   
   <div class="center-btn">
     <form>
-    <a href="#" class="btn" type="file" id="myFile" name="filename">Upload Picture</a>
+      <input type="file" id="upload" hidden/>
+<label class="btn" for="upload">Choose file</label>
+    
   </form>
   
   
@@ -402,7 +404,23 @@
   
   </section>
   
-  
+  <!--cookies-->
+
+  <div class="wrapper">
+    <div class="heder">
+      <i class="bx bx-cookie"></i>
+      <h2>Cookies Consent</h2>
+    </div>
+    <div class="data">
+      <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Read more...</a></p>
+    </div>
+    <div class="buttons">
+      <button class="button" id="acceptBtn">Accept</button>
+      <button class="button" id="declineBtn">Decline</button>
+    </div>
+  </div>
+
+
   <!--Contacts section-->
   <section class="contact" id="contact">
   
@@ -425,16 +443,18 @@
        <tr>
         <th>Contact</th>
         <th>Email</th>
-        <th>LinkedIn</th>
+        <th>Location</th>
        </tr>
   
        <tr>
-        <td>+27 000 - 000 - 00</td>
+        <td>+27 782-251-221</td>
         <td><a href="#">enemiesofSyntax@gmail.org.za</a></td>
-        <td>Enemies Of Syntax</td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26483.702366906542!2d18.44531740212754!3d-33.92922318499383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s27%20DIRHAM%20SALT%20RIVER!5e0!3m2!1sen!2sza!4v1696335705622!5m2!1sen!2sza" width="180" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
        </tr>
       </table>
   
+
+      
     </div>
   </footer>
   </section>
@@ -454,7 +474,7 @@
   
   <script>
     function openForm() {
-      document.getElementById("Login").style.display = "block";
+      document.getElementById("game").style.display = "block";
       event.preventDefault();
     }
     
