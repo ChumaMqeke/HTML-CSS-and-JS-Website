@@ -212,7 +212,8 @@ function resetValues() {
 function myFunction() {
   let text;
   if (confirm("Would you like to improve your typing skill") == true) {
-   document.getElementById("game").display.stlye = "block";
+    const element = document.getElementById("game");
+  element.scrollIntoView();
   } else {
     document.getElementById("game").display.stlye = "none";
   }

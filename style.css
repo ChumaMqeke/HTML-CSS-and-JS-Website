@@ -333,7 +333,7 @@ height: 250px;
 }
 
 .about{
-  display: center;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 4.5rem;
@@ -925,17 +925,24 @@ color: var(--bg-color);
 /*Game*/
 
 
+.bout{
+  display: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4.5rem;
+}
+
 .contain {
 display: flex;
 flex-direction: column;
 align-items: center;
-  border:#07ebfcb4 solid 10px ;
+  border:#22aeb8b4 solid 10px ;
   width: 60%;
   margin: auto;
   border-radius: 10px;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #0a2f5a;
+  background-color: #262e36;
 
 }
 
@@ -959,7 +966,7 @@ margin: 8px;
 color: #cedbdb;
 padding: 12px;
 border-radius: 20%;
-box-shadow: rgb(184, 180, 180) 5px 8px 5px;
+box-shadow: rgb(184, 180, 180) 2px 4px 2px;
 }
 
 .cpm, .wpm  {
@@ -980,15 +987,17 @@ font-size: 1.15rem;
 
 .quote {
 background-color: #16a0a5;
+border-radius: 8px;
 font-size: 1.5rem;
 margin: 10px;
 padding: 25px;
 color: #cedbdb;
-box-shadow: rgb(192, 190, 190) 5px 8px 5px;
+box-shadow: rgb(192, 190, 190) 2px 4px 2px;
 }
 
 .input_area {
 background-color: #f5f5c6;
+border-radius: 8px;
 height: 80px;
 width: 40%;
 font-size: 1.5rem;
@@ -996,7 +1005,7 @@ font-weight: 600;
 margin: 15px;
 padding: 20px;
 border: 0px;
-box-shadow: black 5px 8px 5px;
+box-shadow: black 2px 4px 2px;
 }
 
 .incorrect_char {
@@ -1014,7 +1023,7 @@ background-color: #326765;
 font-size: 1.5rem;
 padding: 10px;
 border: 0px;
-box-shadow: black 5px 8px 5px;
+box-shadow: black 2px 4px 2px;
 }
 
 
@@ -1091,4 +1100,56 @@ color: #30d4d7;
 #declineBtn:hover {
 background-color: #1bccd9;
 color: #fff;
+}
+
+
+/*Search*/
+.h-btn, .form{
+  padding-right: 70px;
+}
+.form{
+
+  position: relative;
+}
+
+.form .fa-search{
+
+  position: absolute;
+  top:10px;
+  right: 350px;
+  color: var(--bg-color);
+
+}
+
+.form span{
+color: #000;
+      position: absolute;
+  
+  top: 5px;
+  padding: 2px;
+  border-left: 1px solid #1c2c31;
+left: 250px;
+}
+
+.left-pan{
+  padding-left: 7px;
+}
+
+.left-pan i{
+ 
+ padding-left: 10px;
+}
+
+.form-input{
+width: 300px;
+  height: 30px;
+  text-indent: 50px;
+  border-radius: 8px;
+ 
+}
+
+.form-input:focus{
+
+  box-shadow: none;
+  border:none;
 }
