@@ -1104,6 +1104,10 @@ color: #fff;
 
 
 /*Search*/
+.highlight {
+  background-color: rgb(155, 76, 76);
+}
+
 .h-btn, .form{
   padding-right: 70px;
 }
